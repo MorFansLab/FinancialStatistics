@@ -7,28 +7,23 @@
     <title>赞助我们-MorFans</title>
 <link rel="stylesheet" href="//cdn.bootcss.com/zui/1.5.0/css/zui.min.css">
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/styletheme.css">
   </head>
   <body>
 <nav class="navbar navbar-default topp" role="navigation">
     <div class="container-fluid">
-      <!-- 导航头部 -->
       <div class="navbar-header">
-        <!-- 移动设备上的导航切换按钮 -->
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-example">
           <span class="sr-only">切换导航</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <!-- 品牌名称或logo -->
         <a class="navbar-brand" href="#"><i class="icon icon-smile"> Donate</i></a>
       </div>
-      <!-- 导航项目 -->
       <div class="collapse navbar-collapse navbar-collapse-example">
-        <!-- 一般导航项目 -->
         <ul class="nav navbar-nav">
           <li class="active"><a href="index.html">赞助</a></li>
-          <!-- 导航中的下拉菜单 -->
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">链接 <b class="caret"></b></a>
             <ul class="dropdown-menu" role="menu">
@@ -36,7 +31,7 @@
               <li><a href="https://chainwon.cc">Chainwon</a></li>
               <li><a href="http://morfans.cc">SofeCenter</a></li>
               <li class="divider"></li>
-              <li><a href="#">QQ群</a></li>
+              <li><a href="#" data-moveable="true" data-toggle="modal" data-target="#myModal">QQ群</a></li>
             </ul>
           </li>
         </ul>
@@ -44,11 +39,7 @@
     </div>
   </nav>
     
-
-
-
 <div class="tip">
-  <p style="font-size: 60px">QQ:2685618862</p>
   </div>
   <div class="myvideo" style="margin-left: 30%;margin-right: 30%;">
     <video controls autoplay="autoplay" style="margin:0 auto;" id="video">
@@ -56,9 +47,6 @@
     <source src="http://7vigs2.com1.z0.glb.clouddn.com/morfansshow.mp4" type="video/mp4">
     </video> 
   </div>
-
-
-
     <div class="cards" style="margin:0 auto;">
         <div class="col-md-6">
       <h1 style="text-align: center">收到的赞助</h1>
@@ -74,7 +62,6 @@
       </tr>
     </thead>
     <tbody class="donate">
-
     </tbody>
   </table>
   <h3 style="text-align: center">总计：￥<span class="sum"></span></h3>
@@ -103,8 +90,23 @@
    </div>
 </div>
     
-
-
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
+        <h4 class="modal-title">这里还没写啦。。</h4>
+      </div>
+      <div class="modal-body">
+        <h1 class="text-warning">:)</h1>
+        <p>太懒了 这里就留着下次写吧 QAQ</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">知道了</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="//cdn.bootcss.com/zui/1.5.0/lib/jquery/jquery.js"></script>
 <script src="./js/config.js"></script>

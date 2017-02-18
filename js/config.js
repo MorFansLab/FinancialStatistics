@@ -17,10 +17,10 @@ $(document).ready(function(){
 		$table.html($strHtml);
 		$(".sum").html(money);
 		new $.zui.Messager('收到总赞助：￥'+money+'', {
-    type: 'success' // 定义颜色主题
+    type: 'success',
+		placement:'bottom-right'
 }).show();
-	})
-
+	});
 $.getJSON("./mydata.json",function(data){
 		var $mytable = $(".mydetail");
 
@@ -39,12 +39,13 @@ $.getJSON("./mydata.json",function(data){
 		$mytable.html($mystrHtml);
 		$(".mysum").html(mymoney);
 		new $.zui.Messager('支出总费用：￥'+mymoney+'', {
-    type: 'success' // 定义颜色主题
+    type: 'success',
+		placement:'bottom-right' 
 }).show();
 	});
 	new $.zui.Messager('感谢所有赞助我们的小伙伴们！', {
 		icon: 'heart',
-    type: 'primary', // 定义颜色主题
+    type: 'primary',
 		time: 0
 }).show();
 });
@@ -66,4 +67,3 @@ function FloatAdd(arg1,arg2){
     m=Math.pow(10,Math.max(r1,r2));
     return (arg1*m+arg2*m)/m;
 }
-
