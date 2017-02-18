@@ -1,7 +1,5 @@
 $(document).ready(function(){
-	// $(".mydetail").html('<i class="icon icon-spin icon-spinner"></i>加载中..');
-	// $(".detail").html('<i class="icon icon-spin icon-spinner"></i>加载中..');
-	
+
 	$.getJSON("./data.json",function(data){
 		var $table = $(".donate");
 		var $strHtml = "";
@@ -18,7 +16,6 @@ $(document).ready(function(){
 		})
 		$table.html($strHtml);
 		$(".sum").html(money);
-		$('table.datatable').datatable();
 		new $.zui.Messager('收到总赞助：￥'+money+'', {
     type: 'success' // 定义颜色主题
 }).show();
