@@ -1,0 +1,36 @@
+.tip{
+  color:white;position: absolute;z-index: 100;margin-left: 35%;margin-right: 35%;
+}
+#content{
+  font-size: 60px;
+  text-shadow: 0 0 40px black;
+}
+.navbar{
+  z-index: 120;
+}
+@media screen and (max-width: 800px) {
+.tip{
+  margin-left: 25%;margin-right: 25%;
+}
+} 
+@media screen and (max-width: 700px) {
+.tip{
+  margin-left: 16%;margin-right: 16%;
+}
+} 
+@media screen and (max-width: 530px) {
+.tip{
+  margin-left: 25%;margin-right: 25%;
+}
+#content{
+  font-size: 40px;
+}
+} 
+@media screen and (max-width: 400px) {
+.tip{
+  margin-left: 23%;margin-right: 23%;
+}
+#content{
+  font-size: 30px;
+}
+} 
