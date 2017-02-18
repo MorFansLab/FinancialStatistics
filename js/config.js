@@ -19,7 +19,6 @@ $(document).ready(function(){
 		$table.html($strHtml);
 		$(".sum").html(money);
 		$('table.datatable').datatable();
-		$('.fuck').datatable({sortable: true});
 		new $.zui.Messager('收到总赞助：￥'+money+'', {
     type: 'success' // 定义颜色主题
 }).show();
