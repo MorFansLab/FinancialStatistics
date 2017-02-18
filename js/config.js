@@ -47,17 +47,7 @@ $.getJSON("./mydata.json",function(data){
     type: 'primary', // 定义颜色主题
 		time: 0
 }).show();
-
-
-
-
-
-
 });
-
-
-
-
 Media = document.getElementById("video"); 
 Media.addEventListener('ended',function(){
 	$(".myvideo").css('filter','blur(90px)');
@@ -69,9 +59,6 @@ Media.addEventListener('play',function(){
 	$(".myvideo").css('-webkit-filter','blur(0px)');
 	$(".tip").html('');
 });
-
-
-
 function FloatAdd(arg1,arg2){
     var r1,r2,m;
     try{r1=arg1.toString().split(".")[1].length}catch(e){r1=0}
