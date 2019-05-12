@@ -49,17 +49,19 @@ $.getJSON("./mydata.json",function(data){
 		time: 0
 }).show();
 });
-Media = document.getElementById("video"); 
-Media.addEventListener('ended',function(){
-	$(".myvideo").css('filter','blur(90px)');
-	$(".myvideo").css('-webkit-filter','blur(90px)');
-	$(".tip").html('<p id="content">QQ:2685618862</p>');
-});
-Media.addEventListener('play',function(){
-	$(".myvideo").css('filter','blur(0px)');
-	$(".myvideo").css('-webkit-filter','blur(0px)');
-	$(".tip").html('');
-});
+
+// Media = document.getElementById("video"); 
+// Media.addEventListener('ended',function(){
+// 	$(".myvideo").css('filter','blur(90px)');
+// 	$(".myvideo").css('-webkit-filter','blur(90px)');
+// 	$(".tip").html('<p id="content">QQ:2685618862</p>');
+// });
+// Media.addEventListener('play',function(){
+// 	$(".myvideo").css('filter','blur(0px)');
+// 	$(".myvideo").css('-webkit-filter','blur(0px)');
+// 	$(".tip").html('');
+// });
+
 function FloatAdd(arg1,arg2){
     var r1,r2,m;
     try{r1=arg1.toString().split(".")[1].length}catch(e){r1=0}
